@@ -19,8 +19,28 @@ To customize your theme:
 - Edit the lms.envs.json file in edx-platform and set 'USE_CUSTOM_THEME' to true, and 'THEME_NAME' to your theme's name.
 
 
-License
-=======
+###Theme installation
 
-The code in this repo is licensed under the Apache 2.0 License.
-See [LICENSE.txt](LICENSE.txt) for more info.
+Resources:
+
+https://openedx.atlassian.net/wiki/plugins/servlet/mobile?contentId=60227913#content/view/60227913
+
+
+```
+sudo su edxapp -s /bin/bash
+cd ~
+
+source edxapp_env
+
+
+cd /edx/app/edxapp/edx-platform
+
+paver update_assets lms --settings=aws
+```
+
+``´
+exit
+
+sudo /edx/bin/supervisorctl restart edxapp:
+sudo /edx/bin/supervisorctl restart edxapp_worker:
+```
