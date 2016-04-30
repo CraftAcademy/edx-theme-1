@@ -48,11 +48,11 @@ from branding.api import get_footer
 
             <nav class="nav-legal" aria-label="${_('Legal')}">
                 <ul>
-                    % for item_num, link in enumerate(footer['legal_links'], start=1):
-                    <li class="nav-legal-0${item_num}">
+                    ## % for item_num, link in enumerate(footer['legal_links'], start=1):
+                    <!--li class="nav-legal-0${item_num}">
                         <a href="${link['url']}">${link['title']}</a>
-                    </li>
-                    % endfor
+                    </li-->
+                    ## % endfor
                 </ul>
             </nav>
         </div>
