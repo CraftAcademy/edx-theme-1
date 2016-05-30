@@ -38,7 +38,7 @@ cd /edx/app/edxapp/edx-platform
 paver update_assets lms --settings=aws
 ```
 
-``´
+```
 exit
 
 sudo /edx/bin/supervisorctl restart edxapp:
